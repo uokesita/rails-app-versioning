@@ -12,8 +12,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "versionator"
-  gem.homepage = "http://github.com/charlotte-ruby/versionator"
+  gem.name = "rails_app_versioning"
+  gem.homepage = "http://github.com/charlotte-ruby/rails_app_versioning"
   gem.license = "MIT"
   gem.summary = %Q{versioning for your Rails 3 app}
   gem.description = %Q{set of rake tasks that allow you to update your release version, tag it and push to github}
@@ -50,7 +50,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "versionator #{version}"
+  rdoc.title = "rails_app_versioning #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

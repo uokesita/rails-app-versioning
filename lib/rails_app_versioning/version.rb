@@ -1,7 +1,7 @@
-module Versionator
+module RailsAppVersioning
   class Version
-    include Versionator::File
-    include Versionator::Git
+    include RailsAppVersioning::File
+    include RailsAppVersioning::Git
     attr_accessor :major, :minor, :patch
 
     def initialize
@@ -9,7 +9,7 @@ module Versionator
       if version_file_content.nil?
         write
         version_file_content = read
-        puts "Versionator file created: #{Versionator.version_file}"
+        puts "RailsAppVersioning file created: #{RailsAppVersioning.version_file}"
       end
       categories = version_categories(version_file_content)
       @major = categories[0]

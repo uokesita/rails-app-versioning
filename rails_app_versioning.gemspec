@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "versionator"
+  s.name = "rails_app_versioning"
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -24,15 +24,15 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/versionator.rb",
-    "lib/versionator/file.rb",
-    "lib/versionator/git.rb",
-    "lib/versionator/railtie.rb",
-    "lib/versionator/railties/versionator.rake",
-    "lib/versionator/version.rb",
-    "versionator.gemspec"
+    "lib/rails_app_versioning.rb",
+    "lib/rails_app_versioning/file.rb",
+    "lib/rails_app_versioning/git.rb",
+    "lib/rails_app_versioning/railtie.rb",
+    "lib/rails_app_versioning/railties/rails_app_versioning.rake",
+    "lib/rails_app_versioning/version.rb",
+    "rails_app_versioning.gemspec"
   ]
-  s.homepage = "http://github.com/charlotte-ruby/versionator"
+  s.homepage = "http://github.com/charlotte-ruby/rails_app_versioning"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"

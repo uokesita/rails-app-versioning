@@ -1,4 +1,4 @@
-module Versionator
+module RailsAppVersioning
   module Git
     def git_current_branch
       git_command("git branch").split(/\n/).grep(/\*/).first.gsub('* ', '')
