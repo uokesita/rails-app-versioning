@@ -61,6 +61,4 @@ Example: v1.1.1 moves to v2.0.0
 
 == Copyright
 
-Copyright (c) 2011 John McAliley. See LICENSE.txt for
-further details.
-
+Copyright (c) 2011 John McAliley and 2013 SciMed Solutions, Inc. See LICENSE.txt for further details.
