@@ -35,17 +35,17 @@ There are 3 rake tasks for each version category.  If the VERSION file does not 
 Bump a patch version, git tag and push to github
 Example: v1.1.1 moves to v1.1.2
 
-    bundle exec rake rails_app_versioning:patch
+    bundle exec rake version:patch
 
 Bump a minor version, git tag and push to github
 Example: v1.1.1 moves to v1.2.0
 
-    bundle exec rake rails_app_versioning:minor
+    bundle exec rake version:minor
 
 Bump a major version, git tag and push to github
 Example: v1.1.1 moves to v2.0.0
 
-    bundle exec rake rails_app_versioning:major
+    bundle exec rake version:major
 
 
 == Contributing to rails_app_versioning
