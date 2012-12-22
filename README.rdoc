@@ -1,6 +1,6 @@
 = rails_app_versioning
 
-Version management for your Rails app (2 or higher).  Provides a VERSION text file and rake tasks to bump patch, minor, and major versions.  This will create a git tag, commit the new VERSION file and push the tag & VERSION to github.
+Version management for your Rails app (2 or higher).  Provides a VERSION text file and rake tasks to bump patch, minor, and major versions.  This will create a git tag, commit the new VERSION file and push the tag & VERSION.
 
 == Install
 
@@ -16,9 +16,9 @@ For Rails 2 (or anything other than Rails 3+), add to your Rakefile
 
     load 'rails_app_versioning/railties/rails_app_versioning.rake'
 
-== Github
+== Git
 
-RailsAppVersioning pushes the git tag and VERSION file to your project's github repository (origin master) each time you run the rake tasks.  It is recommended that you commit all code and push to master before bumping your version.  
+RailsAppVersioning pushes the git tag and VERSION file to your project's git repository (origin master) each time you run the rake tasks.  It is recommended that you commit all code and push to master before bumping your version.
 
 Order of execution for the rake tasks:
 
@@ -36,17 +36,17 @@ TODO: Currently there is no error checking in place for each of these automated 
 
 There are 3 rake tasks for each version category.  If the VERSION file does not exist in the app root directory, the rake task will create it automatically
 
-Bump a patch version, git tag and push to github
+Bump a patch version, git tag and push
 Example: v1.1.1 moves to v1.1.2
 
     bundle exec rake version:patch
 
-Bump a minor version, git tag and push to github
+Bump a minor version, git tag and push
 Example: v1.1.1 moves to v1.2.0
 
     bundle exec rake version:minor
 
-Bump a major version, git tag and push to github
+Bump a major version, git tag and push
 Example: v1.1.1 moves to v2.0.0
 
     bundle exec rake version:major
