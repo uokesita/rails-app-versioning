@@ -1,0 +1,6 @@
+[submodule "test_app"]
+	path = test_app
+	url = https://github.com/nilbus/testapp-rails3.git
+[submodule "test_app_rails2"]
+	path = test_app_rails2
+	url = https://github.com/nilbus/testapp-rails2.git
