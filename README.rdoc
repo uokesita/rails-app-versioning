@@ -1,6 +1,6 @@
 = rails_app_versioning
 
-Version management for your Rails 3 app.  Provides a VERSION text file and rake tasks to bump patch, minor, and major versions.  This will create a git tag, commit the new VERSION file and push the tag & VERSION to github
+Version management for your Rails app (2 or higher).  Provides a VERSION text file and rake tasks to bump patch, minor, and major versions.  This will create a git tag, commit the new VERSION file and push the tag & VERSION to github.
 
 == Install
 
@@ -11,6 +11,10 @@ Add to your Gemfile
 Install with bundler
 
     $ bundle install
+
+For Rails 2 (or anything other than Rails 3+), add to your Rakefile
+
+    load 'rails_app_versioning/railties/rails_app_versioning.rake'
 
 == Github
 
@@ -57,7 +61,18 @@ Example: v1.1.1 moves to v2.0.0
 * Commit and push until you are happy with your contribution
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
-*** Tests are located in a separate repository, since their needs to be a project to tag against.  Here is the test repo: https://github.com/johnmcaliley/test_app
+
+== Testing
+
+* Add the test_repo submodules
+
+    git submodule update --init
+
+* Change to either test directory, and run the rake commands
+
+    cd test_app
+    rake -T             # You should see the version tasks
+    rake version:minor  # Try it out
 
 == Copyright
 
