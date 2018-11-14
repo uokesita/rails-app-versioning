@@ -1,4 +1,4 @@
-require 'rails'
+#require 'rails'
 require 'rails_app_versioning'
 
 module RailsAppVersioning
